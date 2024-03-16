@@ -1,8 +1,9 @@
-package com.example.a7minutesworkout.exercise
+package com.example.a7minutesworkout.ui.exercise
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.a7minutesworkout.data.exercise.ExerciseModel
 import com.example.a7minutesworkout.databinding.ItemExerciseStatusBinding
 
 class ExerciseStatusAdapter(private val items: ArrayList<ExerciseModel>): RecyclerView.Adapter<ExerciseStatusViewHolder>() {

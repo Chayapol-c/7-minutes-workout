@@ -1,6 +1,7 @@
-package com.example.a7minutesworkout.exercise
+package com.example.a7minutesworkout.data.exercise
 
 import com.example.a7minutesworkout.R
+import com.example.a7minutesworkout.data.exercise.ExerciseModel
 
 object Constants {
     fun defaultExerciseList(): ArrayList<ExerciseModel> {

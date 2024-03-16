@@ -1,12 +1,12 @@
-package com.example.a7minutesworkout
+package com.example.a7minutesworkout.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.a7minutesworkout.bmi.BmiActivity
+import com.example.a7minutesworkout.ui.bmi.BmiActivity
 import com.example.a7minutesworkout.databinding.ActivityMainBinding
-import com.example.a7minutesworkout.exercise.ExerciseActivity
-import com.example.a7minutesworkout.history.HistoryActivity
+import com.example.a7minutesworkout.ui.exercise.ExerciseActivity
+import com.example.a7minutesworkout.ui.history.HistoryActivity
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.example.a7minutesworkout.history
+package com.example.a7minutesworkout.ui.history
 
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView

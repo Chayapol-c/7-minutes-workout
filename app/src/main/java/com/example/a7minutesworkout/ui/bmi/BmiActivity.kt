@@ -1,4 +1,4 @@
-package com.example.a7minutesworkout.bmi
+package com.example.a7minutesworkout.ui.bmi
 
 import android.os.Bundle
 import android.view.View

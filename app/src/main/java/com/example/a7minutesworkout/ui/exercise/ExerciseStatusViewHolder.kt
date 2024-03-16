@@ -1,9 +1,10 @@
-package com.example.a7minutesworkout.exercise
+package com.example.a7minutesworkout.ui.exercise
 
 import android.graphics.Color
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.a7minutesworkout.R
+import com.example.a7minutesworkout.data.exercise.ExerciseModel
 import com.example.a7minutesworkout.databinding.ItemExerciseStatusBinding
 
 class ExerciseStatusViewHolder(private val binding: ItemExerciseStatusBinding): RecyclerView.ViewHolder(binding.root) {
