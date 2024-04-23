@@ -50,8 +50,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
     // ktx
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation("androidx.fragment:fragment-ktx:1.6.2")
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.fragment.ktx)
 
     // room
     implementation(libs.androidx.room.runtime)
@@ -59,11 +59,9 @@ dependencies {
     kapt(libs.androidx.room.compiler.v250)
 
     // dagger
-    implementation("com.google.dagger:hilt-android-gradle-plugin:2.44")
-    implementation("com.google.dagger:hilt-android:2.48")
-    kapt("com.google.dagger:hilt-android-compiler:2.48")
-//    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
-//    kapt("androidx.hilt:hilt-compiler:1.0.0")
+    implementation(libs.hilt.android.gradle.plugin)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
