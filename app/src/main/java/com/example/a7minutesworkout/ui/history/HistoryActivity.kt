@@ -62,7 +62,7 @@ class HistoryActivity : AppCompatActivity() {
             setContentView(root)
             setSupportActionBar(toolbarHistoryActivity)
             toolbarHistoryActivity.setNavigationOnClickListener {
-                onBackPressed()
+                onBackPressedDispatcher.onBackPressed()
             }
         }
     }

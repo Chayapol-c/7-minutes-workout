@@ -17,18 +17,19 @@ class FinishActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFinishBinding.inflate(layoutInflater)
 
-        setContentView(binding?.root)
-        setSupportActionBar(binding?.toolbarFinishActivity)
+        binding?.apply {
+            setContentView(root)
+            setSupportActionBar(toolbarFinishActivity)
+            toolbarFinishActivity.setNavigationOnClickListener {
+                onBackPressedDispatcher.onBackPressed()
+            }
+            btnFinish.setOnClickListener {
+                finish()
+            }
+        }
+
         if (supportActionBar != null) {
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        }
-
-        binding?.toolbarFinishActivity?.setNavigationOnClickListener {
-            onBackPressed()
-        }
-
-        binding?.btnFinish?.setOnClickListener {
-            finish()
         }
 
         viewModel.addDateToDatabase()
